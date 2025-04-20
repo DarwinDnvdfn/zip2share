@@ -26,8 +26,15 @@ jobs:
     - name: Build Release APK
       run: ./gradlew assembleRelease
 
+    - name: List Files in APK Directory (for Debugging)
+      run: ls -alh app/build/outputs/apk/release/
+
     - name: Upload Release APK
       uses: actions/upload-artifact@v4
       with:
         name: zip2share-release-apk
-        path: app/build/outputs/apk/release/app-release.apk
+        path: app/build/outputs/apk/release/*.apk
+        if-no-files-found: warn
+        compression-level: 6
+        overwrite: false
+        include-hidden-files: false
