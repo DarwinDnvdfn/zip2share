@@ -1,7 +1,7 @@
 # zip2share
 
 ![Platform](https://img.shields.io/badge/platform-Android-green.svg)
-
+[![Android CI](https://github.com/BR1JM0H4N/zip2share/actions/workflows/android.yml/badge.svg)](https://github.com/BR1JM0H4N/zip2share/actions/workflows/android.yml)
 A lightweight Android application that zips one or multiple shared files into a temporary archive and opens the system share sheet to re-share the resulting ZIP file.
 
 ---
