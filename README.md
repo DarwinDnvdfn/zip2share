@@ -40,7 +40,7 @@ A lightweight Android application that zips one or multiple shared files into a 
 3. Let Gradle sync and resolve dependencies.
 4. Build and install the app on your device or emulator.
 
-> **Note:** Pre-built APKs are also available in the `assets` section for direct download and installation.
+> **Note:** Pre-built Signed APKs are also available in the `assets` section for direct download and installation and unsigned APKs are in `Actions` under workflow > build > Artifacts.
 
 ## Usage
 
