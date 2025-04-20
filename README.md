@@ -41,8 +41,8 @@ A lightweight Android application that zips one or multiple shared files into a 
 ## Prerequisites
 
 - **Android Studio** (or any compatible IDE) for building and debugging the project. Courtesy of [AndroidIDEOfficial](https://github.com/AndroidIDEOfficial).
-- **Android SDK** (API level 19+ recommended)
-- **Java 8** or higher
+- **Android SDK** (API level 21+ recommended)
+- **Java 17** or higher
 
 ## Installation
 
