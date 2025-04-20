@@ -4,7 +4,16 @@
 [![Android CI](https://github.com/BR1JM0H4N/zip2share/actions/workflows/android.yml/badge.svg)](https://github.com/BR1JM0H4N/zip2share/actions/workflows/android.yml)
 ![Gradle](https://img.shields.io/badge/build%20with-Gradle-02303A?logo=gradle)
 ![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
+![Min SDK](https://img.shields.io/badge/minSdk-21-brightgreen)
+![Target SDK](https://img.shields.io/badge/targetSdk-34-blue)
+![Version](https://img.shields.io/badge/version-3.0.0-yellow)
 
+![License](https://img.shields.io/github/license/BR1JM0H4N/zip2share)
+![Stars](https://img.shields.io/github/stars/BR1JM0H4N/zip2share?style=social)
+![Forks](https://img.shields.io/github/forks/BR1JM0H4N/zip2share?style=social)
+![Issues](https://img.shields.io/github/issues/BR1JM0H4N/zip2share)
+![Pull Requests](https://img.shields.io/github/issues-pr/BR1JM0H4N/zip2share)
+![Last Commit](https://img.shields.io/github/last-commit/BR1JM0H4N/zip2share)
 
 A lightweight Android application that zips one or multiple shared files into a temporary archive and opens the system share sheet to re-share the resulting ZIP file.
 
